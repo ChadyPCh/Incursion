@@ -6,12 +6,21 @@ from telegram import (InlineKeyboardMarkup , InlineKeyboardButton ,
 					InputTextMessageContent , Bot)
 
 from random import getrandbits , choice
-import  datetime , time  , sqlite3 , psycopg2
+import  datetime , time  , sqlite3 , pymysql
 
 import pytz
 
 
-
+def __init__(self):
+	self.connection=pymysql.connect(
+		host='containers-us-west-42.railway.app',
+		user='root',
+		password='qzNJ5WZvOxsZK8Pm8g7d'
+		db='railway'
+	)
+	self.cursor=self.connection.cursor()
+	print("se conectooooooo")
+	
 def CREARBD ():
 	
 	con , cur = conn()
