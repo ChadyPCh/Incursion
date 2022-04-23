@@ -525,8 +525,8 @@ def porcen(p,t):
 
 def conn ():
 		
-	def __init__(con):
-		con=con.connection = pymysql.connect(
+	def __init__(self):
+		con=self.connection = pymysql.connect(
 			host='containers-us-west-42.railway.app',
 			user='root',
 			password='qzNJ5WZvOxsZK8Pm8g7d',
@@ -534,7 +534,7 @@ def conn ():
 		)
 		print("se conectooooooo")
 				
-		cur=cur.cursor = con.connection.cursor()	
+		cur=self.cursor = self.connection.cursor()	
 		return con , cur
 	
 def SAVE_STAT_FORAY_SUCCES(Update,context):
