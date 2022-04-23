@@ -523,9 +523,10 @@ def porcen(p,t):
 		por = 0
 	return round(por,1)
 
-def conn ():
+
 		
-	def __init__(self):
+def __init__(self):
+	def conn ():		
 		con = pymysql.connect(
 			host='containers-us-west-42.railway.app',
 			user='root',
