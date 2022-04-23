@@ -526,7 +526,7 @@ def porcen(p,t):
 def conn ():
 		
 	def __init__(con):
-		con.connection = pymysql.connect(
+		con = con.connection = pymysql.connect(
 			host='containers-us-west-42.railway.app',
 			user='root',
 			password='qzNJ5WZvOxsZK8Pm8g7d',
