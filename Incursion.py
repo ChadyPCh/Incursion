@@ -11,15 +11,7 @@ import  datetime , time  , sqlite3 , pymysql
 import pytz
 
 
-def __init__(self):
-	self.connection=pymysql.connect(
-		host='containers-us-west-42.railway.app',
-		user='root',
-		password='qzNJ5WZvOxsZK8Pm8g7d',
-		db='railway'
-	)
-	self.cursor=self.connection.cursor()
-	print("se conectooooooo")
+
 	
 def CREARBD ():
 	
@@ -532,18 +524,15 @@ def porcen(p,t):
 	return round(por,1)
 
 def conn ():
+		
 	
-	
-	con = psycopg2.connect(
-		database="d8sgo1u9j37qua", 
-		user="ldlsmhukahlugx", 
-		password="85181a34a52d9ae2e4f0826e61c2bc27006a695486306a2688ee6815a38e1ed3", 
-		host="ec2-34-206-238-105.compute-1.amazonaws.com", 
-		port="5432")
-				
-	
-	
-	#con = sqlite3.connect("1aksksa.db")
+	con = pymysql.connect(
+		host='containers-us-west-42.railway.app',
+		user='root',
+		password='qzNJ5WZvOxsZK8Pm8g7d',
+		db='railway'
+	)
+	print("se conectooooooo")
 				
 	cur = con.cursor()	
 	return con , cur
