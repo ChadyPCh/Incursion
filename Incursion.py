@@ -15,7 +15,7 @@ def __init__(self):
 	self.connection=pymysql.connect(
 		host='containers-us-west-42.railway.app',
 		user='root',
-		password='qzNJ5WZvOxsZK8Pm8g7d'
+		password='qzNJ5WZvOxsZK8Pm8g7d',
 		db='railway'
 	)
 	self.cursor=self.connection.cursor()
