@@ -532,10 +532,10 @@ def conn ():
 			password='qzNJ5WZvOxsZK8Pm8g7d',
 			db='railway'
 		)
-	print("se conectooooooo")
+		print("se conectooooooo")
 				
-	cur.cursor = cur.connection.cursor()	
-	return con , cur
+		cur.cursor = con.connection.cursor()	
+		return con , cur
 
 def SAVE_STAT_FORAY_SUCCES(Update,context):
 	
